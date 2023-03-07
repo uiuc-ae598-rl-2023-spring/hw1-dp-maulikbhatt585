@@ -23,13 +23,13 @@ def main():
             plot_SARSA(rtotal_s, eps, alpha)
             plot_Qlearning(rtotal_q, eps, alpha)
 
-    plot_example_traj_grid(env, pi_s, "Example Trajectory for SARSA: eps="+str(eps)+", alpha="+str(alpha))
+    plot_example_traj_pend(env, pi_s, "Example Trajectory for SARSA: eps="+str(eps)+", alpha="+str(alpha))
 
     plot_policy(pi_s, "Policy from SARSA: eps="+str(eps)+", alpha="+str(alpha))
 
     plot_state_value(env, pi_s, alpha, n_epochs, "State Value Function from SARSA: eps="+str(eps)+", alpha="+str(alpha))
 
-    plot_example_traj_grid(env, pi_q, "Example Trajectory for Q-learning: eps="+str(eps)+", alpha="+str(alpha))
+    plot_example_traj_pend(env, pi_q, "Example Trajectory for Q-learning: eps="+str(eps)+", alpha="+str(alpha))
 
     plot_policy(pi_q, "Policy from Q-learning: eps="+str(eps)+", alpha="+str(alpha))
 
